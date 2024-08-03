@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Space between boxes */
+            padding: 0 10px; /* Default: 10px gap on the edges for mobile */
+            justify-content: center;
+        }
+        .box {
+            width: 100%;
+            max-width: 180px;
+            min-width: 150px;
+            min-height: 180px;
+            max-height: 200px;
+            background-color: lightblue; /* Just for visibility */
+            flex: 1 1 150px;
+        }
+
+        @media (min-width: 576px) { /* Mobile landscape to small tablet */
+            .container {
+                padding: 0 10px; /* 10px gap on the edges */
+            }
+            .box {
+                flex: 1 1 calc((100% - 40px) / 3); /* 3 boxes per row */
+            }
+        }
+        @media (min-width: 768px) { /* Tablet */
+            .container {
+                padding: 0 40px; /* 40px gap on the edges */
+            }
+            .box {
+                flex: 1 1 calc((100% - 120px) / 4); /* 4 boxes per row */
+            }
+        }
+        @media (min-width: 1024px) { /* Laptop */
+            .container {
+                padding: 0 70px; /* 70px gap on the edges */
+            }
+            .box {
+                flex: 1 1 calc((100% - 350px) / 6); /* 6 boxes per row */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+    </div>
+</body>
+</html>
