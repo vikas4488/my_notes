@@ -1,0 +1,47 @@
+# Step 1: Install proot-distro in Termux
+pkg install proot-distro
+
+# Step 2: Install the Ubuntu distribution
+proot-distro install ubuntu
+
+# Step 3: Log in to the Ubuntu environment
+proot-distro login ubuntu
+
+# Step 4: Update and upgrade packages within Ubuntu
+apt update && apt upgrade
+
+# Step 5: Install necessary packages within Ubuntu
+apt install python3-pip python3-venv build-essential libffi-dev libssl-dev git
+
+# Step 6: Clone your Django project repository
+# Replace 'your-repo-url' with the actual URL of your GitHub repository
+git clone your-repo-url
+cd your-project-directory
+
+# Step 7: Set up a Python virtual environment and activate it
+python3 -m venv venv
+source venv/bin/activate
+
+# Step 8: Install the project's dependencies
+pip install -r requirements.txt
+
+# Step 9: Set up the Django project
+# Apply migrations
+python manage.py migrate
+
+# Create a superuser (optional, if you need to access the admin site)
+python manage.py createsuperuser
+
+# Collect static files (if necessary)
+python manage.py collectstatic
+
+# Step 10: Run the Django development server
+python manage.py runserver
+
+
+## on restart##
+proot-distro login ubuntu
+
+cd your-project-directory
+
+source venv/bin/activate
