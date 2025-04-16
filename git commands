@@ -1,12 +1,27 @@
 git clone https://github.com/vikas4488/railway.git
 cd railway
-git fetch --all
+git fetch --all 
 git checkout railway_uat
 git pull origin railway_uat
 git add <file1> <file2> ...
 git add .
 git commit -m "Describe your changes here"
-git push origin railway_uat
+git push origin railway_uat //
+
+if you have colned mAain
+git clone https://github.com/silent-prince/snote.git
+git add .
+git status
+git push origin main // for commitng in main
+C:\Users\Administrator\Desktop\vikas\snote>git fetch origin
+From https://github.com/silent-prince/snote
+ * [new branch]      raya       -> origin/raya
+
+C:\Users\Administrator\Desktop\vikas\snote>git checkout -b raya origin/raya
+branch 'raya' set up to track 'origin/raya'.
+Switched to a new branch 'raya'
+
+git push origin raya
 
 
 
