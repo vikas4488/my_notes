@@ -3,6 +3,7 @@ cd railway
 git fetch --all 
 git checkout railway_uat
 git pull origin railway_uat
+git checkout -b local_raya origin/raya for making local branch and attach it to remote branch
 git add <file1> <file2> ...
 git add .
 git commit -m "Describe your changes here"
