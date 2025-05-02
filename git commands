@@ -28,8 +28,20 @@ branch 'raya' set up to track 'origin/raya'.
 Switched to a new branch 'raya'
 
 git push origin raya
+-------------------------------------------------
+if main branch got latest code how to put in local
+# 1. Switch to main branch
+git checkout main
 
+# 2. Pull the latest changes from remote main
+git pull origin main
 
+# 3. Switch back to your working branch
+git checkout localraya
+
+# 4. Merge updated main into localraya
+git merge main
+----------------------------------------------
 
 Perform your testing on the railway_uat branch. This could involve running unit tests, integration tests, or manual testing.
 git checkout master
