@@ -4,6 +4,7 @@ git fetch --all
 git checkout railway_uat
 git pull origin railway_uat
 git checkout -b local_raya origin/raya for making local branch and attach it to remote branch
+git branch -vv #### check which brach its checkout
 or for same above {
 git checkout -b local_raya
 git branch --set-upstream-to=origin/raya
