@@ -1,0 +1,18 @@
+cloning of public repo one to another
+C:\Users\vkuma237\Desktop\vikas_snote\snote>git remote -v
+origin  https://github.com/silent-prince/snote.git (fetch)
+origin  https://github.com/silent-prince/snote.git (push)
+C:\Users\vkuma237\Desktop\vikas_snote\snote>git remote remove origin
+C:\Users\vkuma237\Desktop\vikas_snote\snote>git remote -v
+C:\Users\vkuma237\Desktop\vikas_snote\snote> git remote add origin https://github.com/vikas4488/snote.git
+C:\Users\vkuma237\Desktop\vikas_snote\snote>git branch
+* local_raya
+  main
+C:\Users\vkuma237\Desktop\vikas_snote\snote>git push -u origin main
+C:\Users\vkuma237\Desktop\vikas_snote\snote>git checkout -b dev
+Switched to a new branch 'dev'
+C:\Users\vkuma237\Desktop\vikas_snote\snote>git push -u origin dev
+C:\Users\vkuma237\Desktop\vikas_snote\snote>git branch
+* dev
+  local_raya
+  main
